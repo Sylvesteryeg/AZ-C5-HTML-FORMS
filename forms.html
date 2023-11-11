@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="This is an example webpage with metadata.">
+    <meta name="azubi" content="HTML, metadata, favicon, example">
+    <meta name="author" content="Sylvester Amoako Yegoe">
+</head>
+<body>
+    <!--The name, Email and age-->
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <!--Input Types -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{12}" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="country">Country of Residence:</label>
+        <select id="country" name="country" required>
+            <!--The dropdown of countries-->
+            <option value="country1">Ghana</option>
+            <option value="country2">Nigeria</option>
+            <option value="country2">Benin</option>
+            <option value="country2">Togo</option>
+            <option value="country2">Burkina Faso</option>
+        </select>
+
+        <!--Radio Buttons and Checkboxes -->
+        <fieldset>
+            <legend>Interests:</legend>
+
+            <label>Gender:</label>
+            <label for="male"><input type="radio" id="male" name="gender" value="male"> Male</label>
+            <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+
+            <label>Hobbies:</label>
+            <label for="reading"><input type="checkbox" id="reading" name="hobbies[]" value="reading"> Reading</label>
+            <label for="sports"><input type="checkbox" id="sports" name="hobbies[]" value="sports"> Sports</label>
+            <label for="music"><input type="checkbox" id="music" name="hobbies[]" value="music"> Music</label>
+            <label for="travel"><input type="checkbox" id="travel" name="hobbies[]" value="travel"> Travel</label>
+        </fieldset>
+
+        <!--Text Area and Submit Button -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
